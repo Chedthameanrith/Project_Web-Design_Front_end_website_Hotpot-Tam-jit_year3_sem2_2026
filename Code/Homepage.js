@@ -1,4 +1,4 @@
-// Simple alert when items are added to cart
+// Add to card buttons
 document.querySelectorAll('.add-card').forEach(button => {
     button.addEventListener('click', () => {
         const dishName = button.closest('.dish-item').querySelector('h3').innerText;
@@ -6,7 +6,7 @@ document.querySelectorAll('.add-card').forEach(button => {
     });
 });
 
-// Animation for order buttons
+// Order buttons
 document.querySelectorAll('.btn-order').forEach(button => {
     button.addEventListener('mousedown', () => {
         button.style.transform = "scale(0.95)";
